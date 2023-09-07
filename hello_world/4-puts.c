@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * @brief demonstrates the usage of the puts function
+ * function main demonstrates the usage of the puts function
  *
  * This program prints the string Programming is like building a mult
  * using the puts function and adds a new line automatically at the end
