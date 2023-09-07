@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 /**
- * this code demonstrate how the function main prints
- * astring using puts
+ * @brief demonstrates the usage of the puts function
  *
- * puts prints "Programming is like building a multilingual puzzle"
- * and adds new line automatically at the end
+ * This program prints the string "Programming is like building a multilingual puzzle
+ * using the puts function and adds a new line automatically at the end
+ * 
+ * @return 0 on seccessful execution
  */
 int main(void)
 {
