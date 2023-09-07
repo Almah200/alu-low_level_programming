@@ -1,14 +1,9 @@
 #include <stdio.h>
 
 /**
- * function main demonstrates the usage of the puts function
+ * main - the entry/starting point
  *
- * This program prints the string Programming is like building a mult
- * using the puts function and adds a new line automatically at the end
- *
- * @return 0 on seccessful execution
- *
- * main function starts the program
+ * Return: Always 0 (success)
  */
 int main(void)
 {
