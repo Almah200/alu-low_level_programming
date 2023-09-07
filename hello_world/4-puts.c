@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 /**
- * the main function demonstrates 
- * the printing of a string using puts 
+ * this code demonstrate how the function main prints 
+ * astring using puts 
+ * 
+ * puts prints "Programming is like building a multilingual puzzle"
+ * and adds new line automatically at the end
  */
 int main(void)
 {
