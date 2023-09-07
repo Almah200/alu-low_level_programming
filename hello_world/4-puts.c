@@ -7,6 +7,8 @@
  * using the puts function and adds a new line automatically at the end
  *
  * @return 0 on seccessful execution
+ *
+ * main function starts the program
  */
 int main(void)
 {
