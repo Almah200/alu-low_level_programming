@@ -4,6 +4,15 @@
 #include <stdio.h>
 
 /* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * This is the main function where the program starts execution.
+ * It generates a random number, assigns it to 'n', and prints whether 'n' is
+ * positive, zero, or negative.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
