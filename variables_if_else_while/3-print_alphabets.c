@@ -15,13 +15,12 @@ int main(void)
 
 	for (salphabet = 'a'; salphabet <= 'z'; salphabet++) 
 	{
-	putchar(salphabet);
+		putchar(salphabet);
     }
 
 	for (calphabet = 'A'; calphabet <= 'Z'; calphabet++) 
 	{
-		
-	putchar(calphabet);
+		putchar(calphabet);
     }
 
 	putchar('\n');
