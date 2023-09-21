@@ -5,12 +5,18 @@
  *
  * Return: Always 0.
  */
-int main() {
-    for (char c = 'a'; c <= 'z'; c++) {
-        putchar(c);
-    }
+void printLowerCase ()
+{
+	for (char c = 'a'; c <= 'z'; c++)
+	{
+		putchar(c);
+	}
+}
 
-    putchar('\n');
-
-    return 0;
+int main()
+{
+	printLowerCase();
+	putchar('\n');
+	
+	return (0);
 }
