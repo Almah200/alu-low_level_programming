@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 /* Function prototypes */
-void printLowerCase(void);
+void print_alphabet(void);
 /* Add prototypes for your other functions here */
 
 #endif /* MAIN_H */

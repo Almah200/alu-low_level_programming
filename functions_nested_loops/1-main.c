@@ -5,9 +5,11 @@
  *
  * Return: Always 0.
  */
-int main(void)
+int main(void);
 {
-    printLowerCase();
-    putchar('\n');
+   /** printLowerCase();
+    *putchar('\n');
+    */
     return (0);
+    
 }
