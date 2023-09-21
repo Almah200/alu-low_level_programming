@@ -6,6 +6,6 @@
 
 /* Function prototypes */
 void print_alphabet(void);
-/* Add prototypes for your other functions here */
+void print_alphabet_x10(void)
 
 #endif /* MAIN_H */
