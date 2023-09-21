@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - check the code
@@ -12,12 +13,4 @@ void printLowerCase()
 	{
 		putchar(c);
 	}
-}
-
-int main()
-{
-	printLowerCase();
-	putchar('\n');
-	
-	return (0);
 }

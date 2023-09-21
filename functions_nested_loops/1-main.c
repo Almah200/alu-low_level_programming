@@ -7,6 +7,7 @@
  */
 int main(void)
 {
-    print_alphabet();
+    printLowerCase();
+    putchar('\n');
     return (0);
 }
