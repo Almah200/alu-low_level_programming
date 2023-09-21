@@ -6,7 +6,7 @@
  *
  * Return: Always 0.
  */
-void printLowerCase()
+void printLowerCase(void)
 {
 	char c;
 	for (c = 'a'; c <= 'z'; c++)
