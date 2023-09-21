@@ -5,9 +5,10 @@
  *
  * Return: Always 0.
  */
-void printLowerCase ()
+void printLowerCase()
 {
-	for (char c = 'a'; c <= 'z'; c++)
+	char c;
+	for (c = 'a'; c <= 'z'; c++)
 	{
 		putchar(c);
 	}
