@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * _abs - check the code
- *
- * Return: Always 0.
+ * _abs - prints the absolute of a number
+ * @n: The number to be checked
+ * Return: 1 for positive num, -1 for negative num or zero for
+ * anything else
  */
 
 int _abs(int a)
@@ -13,6 +14,6 @@ int _abs(int a)
 	{
 		a = (-1) * a;
 	}
-	
-	return a;
+
+	return (a);
 }
