@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * jack_buer - returns the last digit of a number
- * 
+ * jack_buer - prints every minute of the day of Jack Baue 
  * Return: hour and minute
  */
 void jack_bauer(void)
