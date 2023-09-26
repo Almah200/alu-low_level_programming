@@ -2,8 +2,9 @@
 
 /**
  *reset_to_98 - function to update variable
- *c - An input character
- * Return: Nothing
+ * @n: Pointer to integer
+ * 
+ * This functions take one pointer and changes the value stored in that variable
  */
 void reset_to_98(int *n)
 {
