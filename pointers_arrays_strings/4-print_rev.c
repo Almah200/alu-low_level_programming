@@ -2,22 +2,26 @@
 #include <stdio.h>
 
 /**
- * -print_rev - Prints a string in verse
+ * print_rev - Prints a string in verse
  *  followed by a new line
  *  @s: Pointer to the string to be printed
  */
 void print_rev(char *s)
 {
-	int length = 0;
-
-	while (s[length] != '\0')
-	{
-		length++;
+	char *end = s;
+        while (*end != '\0')
+        {
+		end++;
 	}
 
-	for (int i = length -1; i >= 0; i--)
+	end--;
+
+	while (end >= s)
 	{
-		putchar(s[i]);
+		putchar(*end);
+		end--;
+
 	}
+
 	putchar('\n');
 }
