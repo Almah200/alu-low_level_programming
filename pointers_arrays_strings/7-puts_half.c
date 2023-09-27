@@ -1,6 +1,7 @@
 #include "main.h"
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * puts_half - prints the half string
@@ -10,28 +11,29 @@
  */
 void puts_half(char *str)
 {
-	char rightHalf[100];
 	int length, mid, i, k;
+	char *rightHalf;
 
 	length = strlen(str);
-	mid = length / 2;
-
-	if (length % 2 == 0)
+	mid = (length -1) / 2;
+	
+	rightHalf = malloc((length - mid) * sizeof(char));
+	
+	if (rightHalf == NULL)
 	{
-		for (i = mid, k = 0; i < length; ++i, ++k)
-		{
-			rightHalf[k] = str[i];
-		}
+		
+		fprintf(stderr, "Memory allocation failed\n");
+		return;
 	}
-	else
+	
+	for (i = mid + 1, k = 0; i < length; ++i, ++k)
 	{
-		for (i = mid + 1, k = 0; i < length; ++i, ++k)
-		{
-			rightHalf[k] = str[i];
-		}
+		rightHalf[k] = str[i];
 	}
 	
 	rightHalf[k] = '\0';
 	
-	printf("%s\n", rightHalf);
+	puts(rightHalf);
+	
+	free(rightHalf);
 }
