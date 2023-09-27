@@ -15,7 +15,7 @@ void puts_half(char *str)
 	char *rightHalf;
 
 	length = strlen(str);
-	mid = (length -1) / 2;
+i	mid = (length - 1) / 2;
 
 	rightHalf = malloc((length - mid) * sizeof(char));
 
