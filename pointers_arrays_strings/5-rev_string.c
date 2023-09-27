@@ -4,28 +4,28 @@
 /**
  * rev_string - reverses a string
  * @s: Pointer to a string to be reversed
- * @begin_ptr:Pointer
- * @end_ptr:Pointer
+ * @b:Pointer
+ * @e:Pointer
  *
  */
 void rev_string(char *s)
 {
 	int length, i;
-	char *begin_ptr, *end_ptr, ch;
+	char *b, *e, ch;
 
 	length = strlen(s);
-	begin_ptr = s;
-	end_ptr = s;
+	b = s;
+	e = s;
 	for (i = 0; i < length - 1; i++)
-		end_ptr++;
+		e++;
 	for (i = 0; i < length / 2; i++)
 	{
 		/* swapping */
-		ch = *end_ptr;	
-		*end_ptr = *begin_ptr;
-		*begin_ptr = ch;
+		ch = *e;
+		*e = *b;
+		*b = ch;
 		/* update begin and end pointers*/
-		begin_ptr++;
-		end_ptr--;
+		b++;
+		e--;
 	}
 }
