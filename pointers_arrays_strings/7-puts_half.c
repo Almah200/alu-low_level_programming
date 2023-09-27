@@ -16,24 +16,24 @@ void puts_half(char *str)
 
 	length = strlen(str);
 	mid = (length -1) / 2;
-	
+
 	rightHalf = malloc((length - mid) * sizeof(char));
-	
+
 	if (rightHalf == NULL)
 	{
-		
+
 		fprintf(stderr, "Memory allocation failed\n");
 		return;
 	}
-	
+
 	for (i = mid + 1, k = 0; i < length; ++i, ++k)
 	{
 		rightHalf[k] = str[i];
 	}
-	
+
 	rightHalf[k] = '\0';
-	
+
 	puts(rightHalf);
-	
+
 	free(rightHalf);
 }
