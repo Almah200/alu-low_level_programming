@@ -4,8 +4,6 @@
 /**
  * rev_string - reverses a string
  * @s: Pointer to a string to be reversed
- * @b:Pointer
- * @e:Pointer
  *
  */
 void rev_string(char *s)
