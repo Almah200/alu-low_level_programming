@@ -1,20 +1,21 @@
 #include <string.h>
 
 /**
- * *_strncpy - copy from *src and paste it in *dest
+ * _strcpy - copy from *src and paste it in *dest
  *@src: Pointer
- *@desr: second Pointer to the duffer
- *@n - interger
+ *@dest: second Pointer to the duffer
  *Return: returns Pointer to dest
  */
-char *_strcpy(char *dest, const char *src, size_t n)
+char *_strcpy(char *dest, const char *src)
 {
-	size_t i;
+	int i;
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
+	for (i = 0; src[i] != '\0'; i++)
+	{
 		dest[i] = src[i];
-	for ( ; i < n; i++)
-		dest[i] = '\0';
-
-	return (dest);
+	}
+	
+	dest[i] = '\0';
+	
+	return dest;
 }
