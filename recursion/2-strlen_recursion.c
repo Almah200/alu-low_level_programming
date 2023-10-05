@@ -7,13 +7,13 @@
 size_t _strlen_recursion(char *s)
 {
     size_t length = 0;
-    const char *temp = s;
 
-    while (*temp)
+    if (*s)
     {
         length++;
-        temp++;
+        s++;
+        length += _strlen_recursion(s);
     }
-    
+
     return length;
 }
