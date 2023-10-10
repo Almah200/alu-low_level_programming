@@ -6,7 +6,8 @@
  *create_array - Pointer to an array
  *@size: size of an array
  *@c: char c
- *create_array - Returns array elements
+ *Return: - If size is 0, returns NULL.
+ *     Otherwise, returns a pointer to the allocated and initialized array.
  */
 char *create_array(unsigned int size, char c)
 {
