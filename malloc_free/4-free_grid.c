@@ -5,8 +5,7 @@
  * @grid: multidimensional of integers
  * @height: height of the grid
  *
- * This function frees the memory allocated for a 2D grid previously created
- * using the alloc_grid function. It takes the grid and its height as parameters.
+ * This function frees the memory allocated for a 2D grid
  */
 void free_grid(int **grid, int height)
 {
