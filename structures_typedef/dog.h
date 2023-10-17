@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-/* declaring a struct*/
+/**
+ * dog - struct
+*/
 struct dog{
     char *name;
     float age;
