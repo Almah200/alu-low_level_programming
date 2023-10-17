@@ -2,7 +2,7 @@
 
 /* declaring a struct*/
 struct dog{
-    char name;
-    int age;
-    char owner;
+    char *name;
+    float age;
+    char *owner;
 };
