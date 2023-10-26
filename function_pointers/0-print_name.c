@@ -11,13 +11,6 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	int *ptr = (int*)malloc(strlen(name) +1);
-	if (ptr == NULL)
-	{
-		return;
-	}
-
-	(*f)(name);
-
-	free(ptr);
+	if (f != NULL)
+	(f)(name);
 }
