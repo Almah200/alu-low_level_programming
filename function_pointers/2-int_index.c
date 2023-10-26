@@ -4,6 +4,8 @@
  * @array: pointer to an array
  * @size: size of the array
  * @cmp: Function pointer
+ * Return: the index of the first element for which the cmp function
+ * does not return 0; -1 if no elemenets matches or size <= 0
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
