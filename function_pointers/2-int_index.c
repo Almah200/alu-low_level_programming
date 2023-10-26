@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * int_index - Function that will take pointer to a function
+ * int_index - Function that searches for an integer
  * @array: pointer to an array
  * @size: size of the array
  * @cmp: Function pointer
@@ -13,7 +13,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		return (-1);
 	}
-	
+
 	for (i = 0; i < size; i++)
 	{
 		if (cmp(array[i]) != 0)
