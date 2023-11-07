@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stddef.h>
 /**
  * Reads a text file and prints it's date to the POSIX standard output.
  *
