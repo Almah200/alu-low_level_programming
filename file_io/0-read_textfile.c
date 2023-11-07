@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stddef.h>
+#include <fcntl.h>
 /**
  * Reads a text file and prints it's date to the POSIX standard output.
  *
@@ -8,7 +9,7 @@
  * Return: The actual number of letters read and printed.
  * Returns 0 if the file cannot be opened or read, or if write fails or does not write the expected amount of bytes.
  */
-ssize_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, ssize_t letters)
 {
 	int fd;
 	int a, b;
