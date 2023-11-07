@@ -5,20 +5,20 @@
 #include <stdlib.h>
 #include <unistd.h>
 /**
- * Reads a text file and prints it's date to the POSIX standard output.
- *
- * @param filename: The name of the text file to be read.
- * @param letters: The number of letters to read and print.
- * Return: The actual number of letters read and printed.
- * Returns 0 if the file cannot be opened or read, or if write fails or does not write the expected amount of bytes.
+ * read_textfile - reads a text file and prints it to the standard output
+ * @filename: name of the file to be read
+ * @letters: number of letters to read and print
+ * Return: the number of letters printed, or 0 if it failed
  */
 ssize_t read_textfile(const char *filename, ssize_t letters)
 {
 	int fd;
 	int a, b;
 	char *buf;
+	
 	if (!filename)
 		return (0);
+
 	fd = open(filename, O_RDONLY);
 	if (fd < 0)
 		return (0);
