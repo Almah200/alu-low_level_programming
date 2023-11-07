@@ -2,6 +2,8 @@
 #include <stddef.h>
 #include <fcntl.h>
 #include <sys/types.h>
+#include <stdlib.h>
+#include <unistd.h>
 /**
  * Reads a text file and prints it's date to the POSIX standard output.
  *
